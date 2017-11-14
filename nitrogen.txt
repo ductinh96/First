@@ -1,0 +1,229 @@
+====================
+     11-09-2017
+====================
+
+
+   * packages/apps/Settings/
+cdc9712 Live Volume Steps: Add missed bluetooth sco
+
+====================
+     11-08-2017
+====================
+
+
+====================
+     11-07-2017
+====================
+
+
+   * build/make/
+63d7026 Merge tag 'android-8.0.0_r32' into o
+
+   * frameworks/av/
+860ae63 Merge tag 'android-8.0.0_r32' into o
+
+   * frameworks/base/
+8dc5432 Live Volume Steps [1/2]
+6ed7e56 Merge tag 'android-8.0.0_r32' into o
+
+   * packages/apps/Bluetooth/
+c1a4e62 Merge tag 'android-8.0.0_r32' into o
+
+   * packages/apps/PackageInstaller/
+79f627e Merge tag 'android-8.0.0_r32' into o
+
+   * packages/apps/Settings/
+68ca35e Live Volume Steps [2/2]
+1feab03 Merge tag 'android-8.0.0_r32' into o
+
+   * packages/apps/Snap/
+3240afc Merge remote-tracking branch 'los/lineage-15.0' into HEAD
+
+   * system/bt/
+a1ca078 Merge tag 'android-8.0.0_r32' into o
+
+   * system/core/
+eafaafe Merge tag 'android-8.0.0_r32' into o
+
+====================
+     11-06-2017
+====================
+
+
+   * kernel/xiaomi/kenzo/
+124a4a9 Linux 3.10.108
+8651026 x86/apic: fix build breakage caused by incomplete backport to 3.10
+f2440bd can: esd_usb2: Fix can_dlc value for received RTR, frames
+2a5b2b7 scsi: scsi_dh_emc: return success in clariion_std_inquiry()
+b35b240 usb: gadget: composite: Fix use-after-free in usb_composite_overwrite_options
+863506d KVM: nVMX: fix guest CR4 loading when emulating L2 to L1 exit
+668bfbb IB/qib: fix false-postive maybe-uninitialized warning
+fb3b426 team: fix memory leaks
+04e7f11 IB/ipoib: rtnl_unlock can not come after free_netdev
+013a480 btrfs: prevent to set invalid default subvolid
+c5ee19b tracing: Erase irqsoff trace with empty write
+ce20be4 tracing: Apply trace_clock changes to instance max buffer
+97d2e8f scsi: qla2xxx: Fix an integer overflow in sysfs code
+c70d338 crypto: AF_ALG - remove SGL terminator indicator when chaining
+929b0e1 ip6_gre: fix endianness errors in ip6gre_err
+b6e0ace ipv6: fix typo in fib6_net_exit()
+324cff8 ipv6: fix memory leak with multiple tables during netns destruction
+7e750fd qlge: avoid memcpy buffer overflow
+dacc013 ACPI / APEI: Add missing synchronize_rcu() on NOTIFY_SCI removal
+2bf3863 ALSA: core: Fix unexpected error at replacing user TLV
+67e32cf staging:iio:resolver:ad2s1210 fix negative IIO_ANGL_VEL read
+36f2d7c packet: fix tp_reserve race in packet_set_ring
+793e897 workqueue: implicit ordered attribute should be overridable
+42fb9ab ipv4: initialize fib_trie prior to register_netdev_notifier call.
+18a130f net/mlx4: Remove BUG_ON from ICM allocation routine
+0f4497d perf annotate: Fix broken arrow at row 0 connecting jmp instruction to its target
+acf79b5 udf: Fix deadlock between writeback and udf_setsize()
+a761ebf ir-core: fix gcc-7 warning on bool arithmetic
+8e16cb1 crypto: caam - fix signals handling
+8a932c5 mm: fix overflow check in expand_upwards()
+0a23fde cfg80211: Check if PMKID attribute is of expected size
+e4961a4 cfg80211: Validate frequencies nested in NL80211_ATTR_SCAN_FREQUENCIES
+484f7f0 ipv6: avoid unregistering inet6_dev for loopback
+d9ad52e KEYS: Fix an error code in request_master_key()
+3c1e0d7 KVM: x86: zero base3 of unusable segments
+91b5289 cpufreq: s3c2416: double free on driver init error path
+6b4c771 xfrm: Oops on error in pfkey_msg2xfrm_state()
+5339c0b xfrm: NULL dereference on allocation failure
+354ac31 net: korina: Fix NAPI versus resources freeing
+160ce45 net: phy: fix marvell phy status reading
+53c1c26 drivers/misc/c2port/c2port-duramar2150.c: checking for NULL instead of IS_ERR()
+504a9d5 usb: r8a66597-hcd: decrease timeout
+30945af usb: r8a66597-hcd: select a different endpoint on timeout
+7ad5842 pvrusb2: reduce stack usage pvr2_eeprom_analyze()
+fc98ce8 mfd: omap-usb-tll: Fix inverted bit use for USB TLL mode
+0a48dba x86/mm/32: Set the '__vmalloc_start_set' flag in initmem_init()
+c84df1c serial: efm32: Fix parity management in 'efm32_uart_console_get_options()'
+bb13675 net: xilinx_emaclite: fix receive buffer overflow
+e041ddb drm/vmwgfx: Handle vmalloc() failure in vmw_local_fifo_reserve()
+8336c35 scsi: qla2xxx: don't disable a not previously enabled PCI device
+5a5df15 net: ping: do not abuse udp_poll()
+813634d kvm: async_pf: fix rcu_irq_enter() with irqs enabled
+50fa72f x86/io: Add "memory" clobber to insb/insw/insl/outsb/outsw/outsl
+2a3d09f net: 8021q: Fix one possible panic caused by BUG_ON in free_netdev
+ea041ae net/mlx4_core: Fix VF overwrite of module param which disables DMFS on new probed PFs
+36b4b91 net: Set sk_prot_creator when cloning sockets to the right proto
+ee1778b net/packet: check length in getsockopt() called with PACKET_HDRLEN
+71be386 tcp: initialize rcv_mss to TCP_MIN_MSS instead of 0
+f8ae819 tcp: when rearming RTO, if RTO time is in past then fire RTO ASAP
+b381eae tcp: avoid setting cwnd to invalid ssthresh after cwnd reduction states
+812ceb8 tcp: reset sk_rx_dst in tcp_disconnect()
+115d24e netfilter: xt_TCPMSS: add more sanity tests on tcph->doff
+8440300 tcp: disallow cwnd undo when switching congestion control
+7689a24 sctp: potential read out of bounds in sctp_ulpevent_type_enabled()
+936c115 sctp: fully initialize the IPv6 address in sctp_v6_to_addr()
+74bdffa sctp: fix the check for _sctp_walk_params and _sctp_walk_errors
+0bb57ae sctp: don't dereference ptr before leaving _sctp_walk_{params, errors}()
+0b8e02e ext4: avoid deadlock when expanding inode size
+b9cdf62 ext4: in ext4_seek_{hole,data}, return -ENXIO for negative offsets
+0ad20c0 netfilter: nf_ct_ext: fix possible panic after nf_ct_extend_unregister
+f4960b5 wext: handle NULL extra data in iwe_stream_add_point better
+af6eba3 kernel/extable.c: mark core_kernel_text notrace
+5fed3ce net: prevent sign extension in dev_get_stats()
+f5a6bdc ext4: fix SEEK_HOLE
+f6d0f9a lib/cmdline.c: fix get_options() overflow while parsing ranges
+f751837 md: fix super_offset endianness in super_1_rdev_size_change
+9d6ce1f md/raid10: submit bio directly to replacement disk
+3dbc127 netfilter: invoke synchronize_rcu after set the _hook_ to NULL
+3877b93 lib/digsig: fix dereference of NULL user_key_payload
+a445c93 md/bitmap: disable bitmap_resize for file-backed bitmaps.
+b3d60c6 KEYS: encrypted: fix dereference of NULL user_key_payload
+ee27cb7 KEYS: prevent creating a different user's keyrings
+d5c90e1 MIPS: Fix mips_atomic_set() retry condition
+e5ee3db ext4: keep existing extra fields when inode expands
+67e2c2e FS-Cache: fix dereference of NULL user_key_payload
+47bb90f KEYS: don't let add_key() update an uninstantiated key
+fcc6e75 USB: serial: console: fix use-after-free after failed setup
+ace3c88 direct-io: Prevent NULL pointer access in submit_page_section
+c01295a iommu/amd: Finish TLB flush in amd_iommu_unmap()
+d9a5a40 usb: renesas_usbhs: fix usbhsf_fifo_clear() for RX direction
+e52bb40 usb: renesas_usbhs: fix the BCLR setting condition for non-DCP pipe
+a5c1f01 scsi: zfcp: trace HBA FSF response by default on dismiss or timedout late response
+f02b5b0 scsi: zfcp: fix payload with full FCP_RSP IU in SCSI trace records
+3c5ef76 scsi: zfcp: fix missing trace records for early returns in TMF eh handlers
+f977899 scsi: zfcp: add handling for FCP_RESID_OVER to the fcp ingress path
+0996c7a scsi: zfcp: fix queuecommand for scsi_eh commands when DIX enabled
+6945207 fuse: initialize the flock flag in fuse_file on allocation
+a56dc2a target: Avoid mappedlun symlink creation during lun shutdown
+ba0a67f media: platform: davinci: return -EINVAL for VPFE_CMD_S_CCDC_RAW_PARAMS ioctl
+c68c445 ext4: fix overflow caused by missing cast in ext4_resize_fs()
+d25887f ext4: fix SEEK_HOLE/SEEK_DATA for blocksize < pagesize
+30220b3 workqueue: restore WQ_UNBOUND/max_active==1 to be ordered
+f740057 libata: array underflow in ata_find_dev()
+d8bfdea MIPS: math-emu: Prevent wrong ISA mode instruction emulation
+ceeb844 MIPS: Fix unaligned PC interpretation in `compute_return_epc'
+12739e3 MIPS: Actually decode JALX in `__compute_return_epc_for_insn'
+8131013 usb: renesas_usbhs: fix usbhsc_resume() for !USBHSF_RUNTIME_PWCTRL
+c98b18f powerpc/asm: Mark cr0 as clobbered in mftb()
+b9e32bd powerpc: Fix emulation of mfocrf in emulate_step()
+35e0c82 powerpc/64: Fix atomic64_inc_not_zero() to return an int
+1bf4ad7 PM / Domains: Fix unsafe iteration over modified list of device links
+a86c3c0 crypto: talitos - Extend max key length for SHA384/512-HMAC and AEAD
+c0f6bd6 vt: fix unchecked __put_user() in tioclinux ioctls
+21e1bbb brcmfmac: fix possible buffer overflow in brcmf_cfg80211_mgmt_tx()
+031fb84 staging: comedi: fix clean-up of comedi_class in comedi_init()
+2bf3438 powerpc/kprobes: Pause function_graph tracing during jprobes handling
+8c6005b cpufreq: conservative: Allow down_threshold to take values from 1 to 10
+60d0432 usb: chipidea: debug: check before accessing ci_role
+c06e3ff KEYS: fix dereferencing NULL payload with nonzero length
+5ae3314 serial: ifx6x60: fix use-after-free on module unload
+33103b3 MIPS: Send SIGILL for BPOSGE32 in `__compute_return_epc_for_insn'
+7b8dc201 nl80211: check for the required netlink attributes presence
+09444d3 xfrm: policy: check policy direction value
+7ad4aca rxrpc: Fix several cases where a padded len isn't checked in ticket decode
+ab76863 fs/exec.c: account for argv/envp pointers
+e7a0e1d usb: renesas_usbhs: Fix DMAC sequence for receiving zero-length packet
+1c96fee usb: renesas_usbhs: fix the sequence in xfer_work()
+1b9f672 usb: renesas_usbhs: fix the behavior of some usbhs_pkt_handle
+5bfe09a leak in O_DIRECT readv past the EOF
+c4ca075 mm/page_alloc: Remove kernel address exposure in free_reserved_area()
+2e3b257 tcp: fix xmit timer to only be reset if data ACKed/SACKed
+7e9499c tcp: enable xmit timer fix by having TLP use time when RTO should fire
+23e4e16 tcp: introduce tcp_rto_delta_us() helper for xmit timer fix
+12a38b5 Bluetooth: cmtp: cmtp_add_connection() should verify that it's dealing with l2cap socket
+d7953c3 Bluetooth: bnep: bnep_add_connection() should verify that it's dealing with l2cap socket
+b35b044 udp: consistently apply ufo or fragmentation
+f6bf6b4 Staging: comedi: comedi_fops: Avoid orphaned proc entry
+51833572 net: skb_needs_check() accepts CHECKSUM_NONE for tx
+ac9cd8a net: reduce skb_warn_bad_offload() noise
+508f8af ipvs: SNAT packet replies only for NATed connections
+
+====================
+     11-05-2017
+====================
+
+
+====================
+     11-04-2017
+====================
+
+
+====================
+     11-03-2017
+====================
+
+
+====================
+     11-02-2017
+====================
+
+
+====================
+     11-01-2017
+====================
+
+
+====================
+     10-31-2017
+====================
+
+
+   * frameworks/base/
+07542b0 Quick Settings: Avoid expand indicators shortly showing on edit
+ad51611 Fix NPE with LightBarController dump
+423e334 Vectorized the power menu sound panel selector
+
